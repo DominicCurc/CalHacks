@@ -1,5 +1,4 @@
 // Make sure to install the necessary dependencies
-
 const {
   CallClient,
   VideoStreamRenderer,

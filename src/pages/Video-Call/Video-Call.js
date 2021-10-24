@@ -1,11 +1,19 @@
 import React from "react";
 import Navigation from "../../components/Navigation/Navigation";
+import { Link } from "react-router-dom";
 import { Row, Col, Card, Button } from "react-bootstrap";
 
 export default function VideoCall() {
   return (
     <div>
-      <Navigation />
+      <Navigation sticky="top" />
+      <Link to="/patient">
+        <p>
+          <h6>
+            <strong> Back to Dashboard </strong>
+          </h6>
+        </p>
+      </Link>
       <Row className="rows">
         <Col className="cols1">
           <div className="videoscreen">

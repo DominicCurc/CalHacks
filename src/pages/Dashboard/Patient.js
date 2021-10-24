@@ -5,7 +5,7 @@ import Therapist from "../../components/Therapist-Card/Therapist-Card";
 export default function Dashboard() {
   return (
     <div>
-      <Navigation />
+      <Navigation sticky="top" />
       <br />
       <Therapist />
     </div>

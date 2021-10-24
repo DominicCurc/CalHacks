@@ -29,7 +29,9 @@ body {
 
 .header {
   background-color: #d4c68d;
-  text-align: center;
+  /* text-align: center; */
+  width: 100%;
+  align-self: center;
 }
 
 .closeKey {
@@ -38,4 +40,8 @@ body {
 
 .centerAlignment {
   margin: auto;
+}
+
+.avatarStyle {
+  color: #1bbd7e;
 }

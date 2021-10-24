@@ -1,20 +1,14 @@
 .buttonCard {
   background-color: #f6f5f1;
   padding: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .bookButton {
-  background: #D5C68D;
-  
-  font-family: Oxygen;
-  font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 45px;
-  color: #6B532E;
+  color: #f6f5f1;
+  /* width: 50%; */
 }
 
 .contactInfo {
@@ -22,7 +16,7 @@
   margin-left: 20%;
   margin-right: 20%;
 
-  background: #C4C4C4;
+  background: #c4c4c4;
   font-family: Oxygen;
   font-style: normal;
   font-weight: normal;
@@ -30,7 +24,30 @@
   line-height: 24px;
   text-align: center;
 
-  color: #6B532E;
-
+  color: #6b532e;
+}
+.centerAlign {
+  text-align: center;
 }
 
+.middleAlign {
+  align-self: center;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.photos {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.cardContainer {
+  margin-bottom: 50px;
+}
+
+.marginTop {
+  margin-top: 20px;
+}

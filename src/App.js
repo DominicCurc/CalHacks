@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Patient from "./pages/Dashboard/Patient";
 import Landing from "./pages/Landing/Landing";
-import Therapist from "./pages/Therapist-Info/Therapist-Info";
 import VideoCall from "./pages/Video-Call/Video-Call";
 import "./styles.css";
 import TherapistInfo from "./pages/Therapist-Info/Therapist-Info";
@@ -11,9 +10,16 @@ import TherapistInfo from "./pages/Therapist-Info/Therapist-Info";
 
 // required components are therpist IDs
 // no request handlers are necessary
-const client = require("braintree-web/client");
-const paymentRequest = require("braintree-web/payment-request");
+// const client = require("braintree-web/client");
+// const paymentRequest = require("braintree-web/payment-request");
+// const express = require("express");
+// const app = express();
 
+// app.get("/", function (req, res) {
+//   res.send("Hello World");
+// });
+
+// app.listen(3000);
 // colum (similar to div) with book button,
 // video, and therapist info
 
@@ -26,18 +32,20 @@ export default function App() {
             <Route exact path="/">
               <Landing />
             </Route>
-            <Route exact path="/TherapistInfo">
+            <Route exact path="/therapist">
               <TherapistInfo />
             </Route>
             <Route exact path="/patient">
               <Patient />
             </Route>
-            <Route exact path="/therapist">
+            {/* <Route exact path="/therapist">
               <Therapist />
-            </Route>
-            <Route exact path="/videocall">
-              <VideoCall />
-            </Route>
+            </Route> */}
+            {
+              <Route exact path="/videocall">
+                <VideoCall />
+              </Route>
+            }
           </Switch>
         </div>
       </Router>

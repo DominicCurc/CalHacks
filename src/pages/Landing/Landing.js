@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Landing.css";
 import { Button, Modal } from "react-bootstrap";
+import { TextField } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import Picture from "../../images/counseling.png";
 
 export default function Landing() {
@@ -32,7 +34,35 @@ export default function Landing() {
             </span>
           </Modal.Header>
           <Modal.Body className="popUp">
-            <span> Confused with something? Talk to a tutor! </span>
+            <TextField
+              label="Username"
+              placeholder="Enter username"
+              fullWidth
+              required
+            />
+            <TextField
+              label="Password"
+              placeholder="Enter password"
+              type="password"
+              fullWidth
+              required
+            />
+            <br />
+            <br />
+            <Link to="/patient">
+              <Button
+                className="getStarted"
+                onClick={(event) => (window.location.href = "/patient")}
+              >
+                {" "}
+                Sign In{" "}
+              </Button>
+            </Link>
+            <br />
+            <br />
+            {/* <p>
+              Don't have an account? <Link href="#">Sign Up</Link>
+            </p> */}
           </Modal.Body>
         </Modal>
       </div>

@@ -9,7 +9,12 @@ export default function Navigation() {
       <Navbar collapseOnSelect expand="lg" className="navigation">
         <Container className="centerAlign">
           <Navbar.Brand href="#home" className="centerAlign">
-            <span className="navText centerAlign">CalHacks 2021 Project</span>
+            <span
+              className="navText centerAlign"
+              onClick={(event) => (window.location.href = "/patient")}
+            >
+              CalHacks 2021 Project
+            </span>
           </Navbar.Brand>
           {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
           <span>

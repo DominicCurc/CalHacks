@@ -5,7 +5,10 @@ import Picture from "../../images/person.jpg";
 
 export default function TherapistCard() {
   return (
-    <Card className="therapist">
+    <Card
+      className="therapist"
+      onClick={(event) => (window.location.href = "/therapist")}
+    >
       <Row>
         <Col xs={2} className="centerAlign middleAlign">
           <img src={Picture} className="picture" alt="therapist"></img>
@@ -21,8 +24,12 @@ export default function TherapistCard() {
             <strong> Licensed Therapist </strong>
           </h6>
           <hr />
-          <h6> Speaks fluently in: English, Spanish</h6>
-          <h6> Hourly Rate: 5.00 USD</h6>
+          <h6>
+            <strong>Speaks fluently in</strong>: English, Spanish
+          </h6>
+          <h6>
+            <strong>Hourly Rate</strong>: 5.00 USD
+          </h6>
         </Col>
         <Col className="centerAlign middleAlign">
           <p>
@@ -31,15 +38,20 @@ export default function TherapistCard() {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 <br /> <br />
-                <Button size="sm" className="buttons marginRight">
+                <Button
+                  size="sm"
+                  className="buttons marginRight"
+                  onClick={(event) => (window.location.href = "/therapist")}
+                >
                   Read More
                 </Button>
-                <Button size="sm" className="buttons marginRight">
-                  Send Email
-                </Button>
-                <Button size="sm" className="buttons">
+                {/* <Button
+                  size="sm"
+                  className="buttons"
+                  onClick={(event) => (window.location.href = "/videocall")}
+                >
                   Video Call
-                </Button>
+                </Button> */}
               </em>
             </h6>
           </p>
