@@ -1,0 +1,19 @@
+.rows {
+  padding: 200px;
+}
+
+.cols1 {
+  padding: 200px;
+  text-align: center;
+  align-self: center;
+  margin: auto;
+}
+
+.cols2 {
+  padding: 200px;
+}
+
+.videoscreen {
+  text-align: center;
+  align-self: center;
+}

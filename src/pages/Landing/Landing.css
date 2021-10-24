@@ -1,0 +1,41 @@
+.brand {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.brandPic {
+  width: 600px;
+}
+
+body {
+  background-color: #d4c68d;
+}
+
+.getStarted {
+  color: #f6f5f1;
+  font-weight: bolder;
+}
+
+.logo {
+  color: #1e1d1b;
+}
+
+.popUp {
+  background-color: #f6f5f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #d4c68d;
+  text-align: center;
+}
+
+.closeKey {
+  cursor: pointer;
+}
+
+.centerAlignment {
+  margin: auto;
+}
