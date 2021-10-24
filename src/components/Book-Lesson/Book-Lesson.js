@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import "./Book-Lesson.css";
 import Photos from "../../images/person.jpg";
-
+import initiateAgentCall from "./helper/helper.js";
 export default function BookLesson() {
   return (
     <div className="cardContainer">
@@ -63,7 +63,8 @@ export default function BookLesson() {
           <Col xs={3} className="centerAlign">
             <Button
               className="bookButton"
-              onClick={(event) => (window.location.href = "/videocall")}
+              id="initialize-call-agent"
+              onClick={() => initiateAgentCall()}
             >
               Start a Video Call
             </Button>

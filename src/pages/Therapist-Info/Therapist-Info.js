@@ -1,5 +1,6 @@
 import React from "react";
 import "./Therapist-Info.css";
+import "../../video/client.js";
 // import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Navigation from "../../components/Navigation/Navigation";
@@ -29,9 +30,6 @@ export default function TherapistInfo() {
             <strong> Ratings </strong>
           </h1>
         </div>
-        {/* <div>
-          <Rating />
-        </div> */}
       </div>
     </div>
   );

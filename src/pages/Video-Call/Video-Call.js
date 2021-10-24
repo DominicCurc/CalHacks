@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../../components/Navigation/Navigation";
 import { Link } from "react-router-dom";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 
 export default function VideoCall() {
   return (
@@ -18,7 +18,6 @@ export default function VideoCall() {
         <Col className="cols1">
           <div className="videoscreen">
             The video of the patient should appear here
-            <bookLesson />
           </div>
           <Button className="buttons marginRight">Open Camera</Button>
           <Button className="buttons marginRight">Close Camera</Button>
